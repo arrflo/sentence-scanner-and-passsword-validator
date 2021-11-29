@@ -38,6 +38,12 @@ def lwrLetters ():
 
 notCapitalLetters = lwrLetters ()
 
+def numericCharacters ():
+    _numbers = ['0','1','2','3','4','5','6','7','8','9']
+    return _numbers
+
+numbers = numericCharacters ()
+
 #countletters
 
 def countLetters (string):
@@ -45,7 +51,7 @@ def countLetters (string):
     count = 0
     for i in string1:
         if i in capitalLetters or i in notCapitalLetters:
-            count = count + 1
+            count += 1
     return count
 
 cntLetters = countLetters (pword)
@@ -57,20 +63,34 @@ def countCapLetters (string):
     count = 0
     for i in string2:
         if i in capitalLetters:
-            count = count + 1
+            count += 1
     return count
 
 cntcapLetters = countCapLetters (pword)
 
 #numbers
+
 def countNumbers (string):
     string3 = string.strip()
     count = 0
     for i in string3:
-        if i in ('0','1','2','3','4','5','6','7','8','9'):
-            count = count + 1
+        if i in numbers:
+            count += 1
     return count
 
 cntNumbers = countNumbers (pword)
 
-print(cntNumbers)
+#special character
+
+def countSpecialCharacters (string):
+    string4 = string.strip()
+    count = 0
+    for i in string4:
+        if i not in numbers and i not in capitalLetters and i not in notCapitalLetters:
+            count += 1
+    return count
+
+cntSpecialCharacters = countSpecialCharacters (pword)
+
+
+print(cntLetters,cntcapLetters,cntNumbers,cntSpecialCharacters)
