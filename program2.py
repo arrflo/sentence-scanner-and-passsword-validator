@@ -80,7 +80,7 @@ def countNumbers (string):
 
 cntNumbers = countNumbers (pword)
 
-#special character
+#special characters
 
 def countSpecialCharacters (string):
     string4 = string.strip()
@@ -92,5 +92,40 @@ def countSpecialCharacters (string):
 
 cntSpecialCharacters = countSpecialCharacters (pword)
 
+#pw format
+conditionA = "Greater than 15 letters"
+conditionB = "Have at least one capital letter"
+conditionC = "Have at least one number"
+conditionD = "Have at least one special char (!@#$%^&*()_+ etc)"
 
-print(cntLetters,cntcapLetters,cntNumbers,cntSpecialCharacters)
+#pw format print func
+def displayCondition ():
+    print ("Your Password must follow the following condition/s:")
+
+conditiondisp = displayCondition ()
+
+# def conditions ():
+#     if cntLetters > 15 and cntcapLetters >= 1 and cntNumbers >= 1 and cntSpecialCharacters >= 1:
+#         print ("Your Password is Valid!")
+#     else: conditiondisp
+#     if cntLetters <= 15:
+#         print (conditionA)
+#     elif cntcapLetters < 1:
+#         print (conditionB)
+#     elif cntNumbers < 1:
+#         print (conditionC)
+#     elif cntSpecialCharacters < 1:
+#         print (conditionD)
+
+# conditions ()
+
+
+# a. Greater than 15 letters
+# b. Have at least one capital letter
+# c. Have at least one number
+# d. Have at least one special char (!@#$%^&*()_+ etc)
+
+#truelahat
+#a, ab, ac, ad
+
+#print(cntLetters,cntcapLetters,cntNumbers,cntSpecialCharacters)
