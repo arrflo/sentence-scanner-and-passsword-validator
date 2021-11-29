@@ -26,7 +26,7 @@ def numberWords (string):
     count = 1 
     for i in string1:
         if i ==" ":
-            count = count + 1
+            count += 1
     return count
 
 
@@ -36,7 +36,7 @@ def numberVowels (string):
     count = 0
     for i in string2:
         if i in ('a','e','i','o','u') or i in ('A','E','I','O','U'):
-            count = count + 1
+            count += 1
     return count
 
 
@@ -48,7 +48,7 @@ def numberConsonants (string):
         if i in ('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'):
             count = count + 1
         elif i in ('B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z'):
-            count = count + 1
+            count += 1
     return count 
 
 
