@@ -16,13 +16,33 @@ def password ():
    return _password
 
 pword = password ()
+
+def uprLetters ():
+    alphabets_in_capital = []
+    for i in range (65,91):
+       alphabets_in_capital.append(chr(i))
+    return alphabets_in_capital
+
+capitalLetters = uprLetters ()
+
+def lwrLetters ():
+    alphabets_not_in_capital = []
+    for i in range (97,123):
+       alphabets_not_in_capital.append(chr(i))
+    return alphabets_not_in_capital
+
+notCapitalLetters = lwrLetters ()
+
 #countletters
 
 def countLetters (string):
     string1 = string.strip()
     count = 0
     for i in string1:
-        count = count + 1
+        if i in capitalLetters or i in notCapitalLetters:
+            count = count + 1
     return count
 
-cLetters = countLetters (pword)
+cntLetters = countLetters (pword)
+
+print (cntLetters)
