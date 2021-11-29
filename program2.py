@@ -11,8 +11,13 @@
 
 # Tip: loop through each character of the input then process it letter by letter
 
+def header():
+    print ("Password Validator")
+
+header()
+
 def password ():
-   _password = input("Enter Password here!: ")
+   _password = input("Enter Password here: ")
    return _password
 
 pword = password ()
@@ -45,4 +50,27 @@ def countLetters (string):
 
 cntLetters = countLetters (pword)
 
-print (cntLetters)
+#capital letters
+
+def countCapLetters (string):
+    string2 = string.strip()
+    count = 0
+    for i in string2:
+        if i in capitalLetters:
+            count = count + 1
+    return count
+
+cntcapLetters = countCapLetters (pword)
+
+#numbers
+def countNumbers (string):
+    string3 = string.strip()
+    count = 0
+    for i in string3:
+        if i in ('0','1','2','3','4','5','6','7','8','9'):
+            count = count + 1
+    return count
+
+cntNumbers = countNumbers (pword)
+
+print(cntNumbers)
