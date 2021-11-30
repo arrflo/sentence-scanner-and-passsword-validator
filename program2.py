@@ -115,22 +115,22 @@ else:
         displayCondition()
         print (conditionA)
     elif a <= 15 and b < 1 and c >= 1 and d >= 1:
-        displayCondition ()
+        displayCondition()
         print (conditionA)
         print (conditionB)
     elif a <= 15 and b < 1 and c < 1 and d >= 1:
-        displayCondition ()
+        displayCondition()
         print (conditionA)
         print (conditionB)
         print (conditionC)
     elif a <= 15 and b < 1 and c < 1 and d < 1:
-        displayCondition ()
+        displayCondition()
         print (conditionA)
         print (conditionB)
         print (conditionC)
         print (conditionD)   
     elif a <= 15 and b < 1 and c >= 1 and d < 1:        
-        displayCondition ()
+        displayCondition()
         print (conditionA)
         print (conditionB)
         print (conditionD)
@@ -151,11 +151,11 @@ else:
         displayCondition()
         print (conditionB)
     elif a > 15 and b < 1 and c < 1 and d >= 1:
-        displayCondition ()
+        displayCondition()
         print (conditionB)
         print (conditionC)
     elif a > 15 and b < 1 and c < 1 and d < 1:
-        displayCondition ()
+        displayCondition()
         print (conditionB)
         print (conditionC)
         print (conditionD)
