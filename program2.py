@@ -111,66 +111,66 @@ else:
     b = cntcapLetters 
     c = cntNumbers 
     d = cntSpecialChar
-    if a <= 15:
+    if a <= 15 and b >= 1 and c >= 1 and d >= 1:    
         displayCondition()
         print (conditionA)
-        if b < 1:
-            displayCondition ()
-            print (conditionA)
-            print (conditionB)
-            if c < 1:
-                displayCondition ()
-                print (conditionA)
-                print (conditionB)
-                print (conditionC)
-                if d < 1:
-                    displayCondition ()
-                    print (conditionA)
-                    print (conditionB)
-                    print (conditionC)
-                    print (conditionD)   
-            elif d < 1:
-                displayCondition ()
-                print (conditionA)
-                print (conditionB)
-                print (conditionD)
-        elif c < 1:
-            displayCondition()
-            print (conditionA)
-            print (conditionC)
-            if d < 1:
-                displayCondition()
-                print (conditionA)
-                print (conditionC)
-                print (conditionD)
-        elif d < 1:
-            displayCondition()
-            print (conditionA)
-            print (conditionD)
-    elif b < 1:
+    elif a <= 15 and b < 1 and c >= 1 and d >= 1:
+        displayCondition ()
+        print (conditionA)
+        print (conditionB)
+    elif a <= 15 and b < 1 and c < 1 and d >= 1:
+        displayCondition ()
+        print (conditionA)
+        print (conditionB)
+        print (conditionC)
+    elif a <= 15 and b < 1 and c < 1 and d < 1:
+        displayCondition ()
+        print (conditionA)
+        print (conditionB)
+        print (conditionC)
+        print (conditionD)   
+    elif a <= 15 and b < 1 and c >= 1 and d < 1:        
+        displayCondition ()
+        print (conditionA)
+        print (conditionB)
+        print (conditionD)
+    elif a <= 15 and b >= 1 and c < 1 and d >= 1:   
+        displayCondition()
+        print (conditionA)
+        print (conditionC)
+    elif a <= 15 and b >= 1 and c < 1 and d < 1:
+        displayCondition()
+        print (conditionA)
+        print (conditionC)
+        print (conditionD)
+    elif a <= 15 and b >= 1 and c >= 1 and d < 1:
+        displayCondition()
+        print (conditionA)
+        print (conditionD)
+    elif a > 15 and b < 1 and c >= 1 and d >= 1:
         displayCondition()
         print (conditionB)
-        if c < 1:
-            displayCondition ()
-            print (conditionB)
-            print (conditionC)
-            if d < 1:
-                displayCondition ()
-                print (conditionB)
-                print (conditionC)
-                print (conditionD)
-        elif d < 1:
-            displayCondition()
-            print (conditionB)
-            print (conditionD)
-    elif c < 1:
+    elif a > 15 and b < 1 and c < 1 and d >= 1:
+        displayCondition ()
+        print (conditionB)
+        print (conditionC)
+    elif a > 15 and b < 1 and c < 1 and d < 1:
+        displayCondition ()
+        print (conditionB)
+        print (conditionC)
+        print (conditionD)
+    elif a > 15 and b < 1 and c >= 1 and d < 1:
+        displayCondition()
+        print (conditionB)
+        print (conditionD)
+    elif a > 15 and b >= 1 and c < 1 and d >= 1:
         displayCondition()
         print (conditionC)
-        if d < 1:
-            displayCondition()
-            print (conditionC)
-            print (conditionD)
-    elif d < 1:
+    elif a > 15 and b >= 1 and c < 1 and d < 1:
+        displayCondition()
+        print (conditionC)
+        print (conditionD)
+    elif a > 15 and b >= 1 and c >= 1 and d < 1:
         displayCondition()
         print (conditionD)
 
