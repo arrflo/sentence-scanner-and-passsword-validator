@@ -100,14 +100,91 @@ conditionD = "Have at least one special char (!@#$%^&*()_+ etc)"
 
 #pw format print func
 def displayCondition ():
-    print ("Your Password must qualify the following condition/s:")
+    print ("Your password must qualify the following condition/s:")
 
-# a. Greater than 15 characters
-# b. Have at least one capital letter
-# c. Have at least one number
-# d. Have at least one special char (!@#$%^&*()_+ etc)
+#conditions
 
-# truelahat
-# a, ab, ac, ad
+if cntChar > 15 and cntcapLetters >= 1 and cntNumbers >= 1 and cntSpecialChar >= 1:
+    print ("Your password is valid!")
+else: 
+    a = cntChar 
+    b = cntcapLetters 
+    c = cntNumbers 
+    d = cntSpecialChar
+    if a <= 15:
+        displayCondition()
+        print (conditionA)
+        if b < 1:
+            displayCondition ()
+            print (conditionA)
+            print (conditionB)
+            if c < 1:
+                displayCondition ()
+                print (conditionA)
+                print (conditionB)
+                print (conditionC)
+                if d < 1:
+                    displayCondition ()
+                    print (conditionA)
+                    print (conditionB)
+                    print (conditionC)
+                    print (conditionD)   
+            elif d < 1:
+                displayCondition ()
+                print (conditionA)
+                print (conditionB)
+                print (conditionD)
+        elif c < 1:
+            displayCondition()
+            print (conditionA)
+            print (conditionC)
+            if d < 1:
+                displayCondition()
+                print (conditionA)
+                print (conditionC)
+                print (conditionD)
+        elif d < 1:
+            displayCondition()
+            print (conditionA)
+            print (conditionD)
+    elif b < 1:
+        displayCondition()
+        print (conditionB)
+        if c < 1:
+            displayCondition ()
+            print (conditionB)
+            print (conditionC)
+            if d < 1:
+                displayCondition ()
+                print (conditionB)
+                print (conditionC)
+                print (conditionD)
+        elif d < 1:
+            displayCondition()
+            print (conditionB)
+            print (conditionD)
+    elif c < 1:
+        displayCondition()
+        print (conditionC)
+        if d < 1:
+            displayCondition()
+            print (conditionC)
+            print (conditionD)
+    elif d < 1:
+        displayCondition()
+        print (conditionD)
 
-print(cntChar,cntcapLetters,cntNumbers,cntSpecialChar)
+#test
+# input: P@ssw0rd+P@ssw0rd
+# ouput: Valid
+
+# data
+# characters: 17
+# special characters: 3 
+# numbers: 2  
+# capital letters: 2
+# letters: 12
+
+#for checking ng counting
+#print (cntChar,cntSpecialChar, cntNumbers, cntcapLetters)
+
