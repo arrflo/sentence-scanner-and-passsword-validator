@@ -96,7 +96,7 @@ cntSpecialChar = countSpecialCharacters (pword)
 conditionA = "Greater than 15 characters"
 conditionB = "Have at least one capital letter"
 conditionC = "Have at least one number"
-conditionD = "Have at least one special char (!@#$%^&*()_+ etc)"
+conditionD = "Have at least one special character (!@#$%^&*()_+ etc)"
 
 #pw format print func
 def displayCondition ():
