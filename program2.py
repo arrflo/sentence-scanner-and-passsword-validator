@@ -1,7 +1,7 @@
 # Program 2: Password validator
 # Create a program that check if password is valid
 # The password is valid if all criteria are met:
-# a. Greater than 15 letters
+# a. Greater than 15 characters
 # b. Have at least one capital letter
 # c. Have at least one number
 # d. Have at least one special char (!@#$%^&*()_+ etc)
@@ -44,17 +44,17 @@ def numericCharacters ():
 
 numbers = numericCharacters ()
 
-#countletters
+#countcharacters
 
-def countLetters (string):
+def countcharacters (string):
     string1 = string.strip()
     count = 0
     for i in string1:
-        if i in capitalLetters or i in notCapitalLetters:
+        if i:
             count += 1
     return count
 
-cntLetters = countLetters (pword)
+cntChar = countcharacters (pword)
 
 #capital letters
 
@@ -86,46 +86,28 @@ def countSpecialCharacters (string):
     string4 = string.strip()
     count = 0
     for i in string4:
-        if i not in numbers and i not in capitalLetters and i not in notCapitalLetters:
+        if i not in numbers and i not in capitalLetters and i not in notCapitalLetters and i != " ":
             count += 1
     return count
 
-cntSpecialCharacters = countSpecialCharacters (pword)
+cntSpecialChar = countSpecialCharacters (pword)
 
 #pw format
-conditionA = "Greater than 15 letters"
+conditionA = "Greater than 15 characters"
 conditionB = "Have at least one capital letter"
 conditionC = "Have at least one number"
 conditionD = "Have at least one special char (!@#$%^&*()_+ etc)"
 
 #pw format print func
 def displayCondition ():
-    print ("Your Password must follow the following condition/s:")
+    print ("Your Password must qualify the following condition/s:")
 
-conditiondisp = displayCondition ()
-
-# def conditions ():
-#     if cntLetters > 15 and cntcapLetters >= 1 and cntNumbers >= 1 and cntSpecialCharacters >= 1:
-#         print ("Your Password is Valid!")
-#     else: conditiondisp
-#     if cntLetters <= 15:
-#         print (conditionA)
-#     elif cntcapLetters < 1:
-#         print (conditionB)
-#     elif cntNumbers < 1:
-#         print (conditionC)
-#     elif cntSpecialCharacters < 1:
-#         print (conditionD)
-
-# conditions ()
-
-
-# a. Greater than 15 letters
+# a. Greater than 15 characters
 # b. Have at least one capital letter
 # c. Have at least one number
 # d. Have at least one special char (!@#$%^&*()_+ etc)
 
-#truelahat
-#a, ab, ac, ad
+# truelahat
+# a, ab, ac, ad
 
-#print(cntLetters,cntcapLetters,cntNumbers,cntSpecialCharacters)
+print(cntChar,cntcapLetters,cntNumbers,cntSpecialChar)
